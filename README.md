@@ -3,6 +3,11 @@ Cruzes
 
 Regulamento do jogo
 -------------------
+Veja os vídeos demonstrativos:
+
+1. https://youtu.be/Oo-yM7k32WA
+1. https://youtu.be/6sZnZQAGUp4
+
 Cruzes é um jogo contemporâneo de dois jogadores. Um jogador joga com o time da
 cruz mais (+), o outro joga com o time da cruz xis (x). O time a começar o jogo
 é definido por sorteio.
