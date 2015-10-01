@@ -1,8 +1,8 @@
 Cruzes
 ======
 
-Regulamento
------------
+Regulamento do jogo
+-------------------
 Cruzes é um jogo contemporâneo de dois jogadores. Um jogador joga com o time da
 cruz mais (+), o outro joga com o time da cruz xis (x). O time a começar o jogo
 é definido por sorteio.
@@ -36,9 +36,22 @@ quando atinge uma das seguintes situações:
   * Um jogador converteu todas as peças do outro
   * Um jogador não tem movimento válido para fazer. Nesse caso, quem tiver mais peças ganha.
 
+Trabalho
+--------
+A versão atual do projeto conta com um pacote chamado api. Nele, estão diversas interfaces, alguns enums,
+algumas exceções e uma classe abstrata. O trabalho de cada grupo será implementar algumas das interfaces ou
+classe abstrata. As interfaces/classe a serem implementadas devem seguir as instruções informadas.
+
+As classes concretas devem ser criadas no pacote implementacao, onde há uma classe de exemplo chamada
+ColoqueSuasClassesAqui.
+
+Cada grupo deverá bifurcar este repositório, implementar as novas funcionalidades e,
+quando terminar a implementação, abrir um Pull Request pelo GitHub. Isso solicitará ao professor
+a integração das funcionalidades implementadas no repositório original.
+
 Divisão de tarefas
 ------------------
-Cada grupo deverá fazer uma das tarefas a seguir:
+Cada grupo deverá escolher para fazer uma das tarefas a seguir:
 
 1. Partida (classe que coordena a interação entre as outras)
 1. VisualizacaoTabuleiro (em modo console); Jogador (humano, que leia os movimentos desejados usando Scanner); Jogador (IA extremamente simples, que tente fazer movimentos aleatórios). Caso uma ou mais das classes que você fizer precisar de uma instância de FabricaMovimento, faça a classe receber essa instância no construtor.
