@@ -18,7 +18,7 @@ O tamanho do lado deve ser um número ímpar. Normalmente, adota-se 5x5, mas
 qualquer tamanho ímpar maior que ou igual a 5x5 é válido.
 
 As peças são colocadas na primeira fileira de cada lado, sempre nas casas
-pretas. O número de peças para cada jogador é (l + 1) / 2, sendo l o tamanho do
+pretas. O número de peças para cada jogador é (n + 1) / 2, sendo n o tamanho do
 lado do tabuleiro.
 
 Na vez de cada jogador, ele deve movimentar uma de suas peças, para frente ou
