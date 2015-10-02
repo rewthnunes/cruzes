@@ -1,8 +1,7 @@
-Cruzes
-======
+# Cruzes
 
-Regulamento do jogo
--------------------
+## Regulamento do jogo
+
 Veja os vídeos demonstrativos:
 
 1. https://youtu.be/Oo-yM7k32WA
@@ -27,22 +26,23 @@ movimento do time xis deve ser na diagonal. O movimento deve sempre pegar uma
 peça e levar a uma casa vazia; não é possível movimentar uma peça para uma casa
 já ocupada.
 
-Quando uma peça é movida para uma posição adjacente a uma peça do oponente,
-essa peça do oponente para o outro time, que passa a controlá-la. A adjacência
-segue a mesma regra do movimento: para o time mais, vale a adjacência na
-horizontal ou vertical; para o time xis, vale na diagonal. Basta seguir a
-direção indicada pela cruz.
+As casas adjacentes a uma peça são as casas de influência daquela peça.
+A adjacência do time mais ocorre na horizontal e na vertical; a influência do
+time xis é na diagonal. Basta seguir a direção indicada pela cruz.
+Assim que uma peça é movida, se ela influenciar
+uma peça do oponente, esta última é convertida para o time da primeira.
+O time xis converte peças mais em xis; o time mais converte peças xis em mais.
 
 A conversão só acontece imediatamente após o movimento. Mover uma peça para uma
-casa "ameaçada" não tem nenhum efeito.
+casa influenciada não tem nenhum efeito.
 
 O objetivo do jogo é converter todas as peças do oponente. O jogo termina
 quando atinge uma das seguintes situações:
   * Um jogador converteu todas as peças do outro
   * Um jogador não tem movimento válido para fazer. Nesse caso, quem tiver mais peças ganha.
 
-Trabalho
---------
+## Trabalho
+
 A versão atual do projeto conta com um pacote chamado api. Nele, estão diversas interfaces, alguns enums,
 algumas exceções e uma classe abstrata. O trabalho de cada grupo será implementar algumas das interfaces ou
 classe abstrata. As interfaces/classe a serem implementadas devem seguir as instruções informadas.
@@ -54,13 +54,18 @@ Cada grupo deverá bifurcar este repositório, implementar as novas funcionalida
 quando terminar a implementação, abrir um Pull Request pelo GitHub. Isso solicitará ao professor
 a integração das funcionalidades implementadas no repositório original.
 
-Divisão de tarefas
-------------------
+## Divisão de tarefas
+
 Cada grupo deverá escolher para fazer uma das tarefas a seguir:
 
 1. Partida (classe que coordena a interação entre as outras)
+
 1. VisualizacaoTabuleiro (em modo console); Jogador (humano, que leia os movimentos desejados usando Scanner); Jogador (IA extremamente simples, que tente fazer movimentos aleatórios). Caso uma ou mais das classes que você fizer precisar de uma instância de FabricaMovimento, faça a classe receber essa instância no construtor.
+
 1. VisualizacaoTabuleiro (em modo interface gráfica); Jogador (humano, que leia os movimentos desejados usando JOptionPane). Caso uma ou mais das classes que você fizer precisar de uma instância de FabricaMovimento, faça a classe receber essa instância no construtor.
+
 1. Casa; FabricaTabuleiro; TabuleiroLeituraEscrita. As exceções indicadas nas interfaces devem ser disparadas caso ocorram aqueles erros.
+
 1. AnalisadorTabuleiro; EstadoJogo
+
 1. Movimento; Posicao; Jogador (humano, que leia os movimentos desejados a partir da rede, usando um Socket)
